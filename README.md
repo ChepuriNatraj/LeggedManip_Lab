@@ -11,6 +11,9 @@
 [![Linux platform](https://img.shields.io/badge/platform-linux--64-orange.svg)](https://releases.ubuntu.com/22.04/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-yellow.svg)](https://opensource.org/license/apache-2-0)
 
+[English](README.md) | [中文](README_CN.md)
+
+
 **A Reinforcement Learning (RL) framework for legged robots with manipulator arms**
 
 Legged robots with manipulation arms present unique challenges — coordinating locomotion and dexterous manipulation simultaneously. LeggedManip Lab addresses this by providing a unified RL training framework built on Isaac Lab, supporting whole-body locomotion-manipulation policy training and deployment across 7 robot platforms, including Flat and Whole-Body Control (WBC) training modes.

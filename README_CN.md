@@ -11,6 +11,9 @@
 [![Linux platform](https://img.shields.io/badge/platform-linux--64-orange.svg)](https://releases.ubuntu.com/22.04/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-yellow.svg)](https://opensource.org/license/apache-2-0)
 
+[English](README.md) | [中文](README_CN.md)
+
+
 **面向腿足操作机器人的强化学习训练框架**
 
 腿足机器人与机械臂的协同控制面临独特挑战——需要同时协调运动与灵巧操作。LeggedManip Lab 基于 Isaac Lab 构建了统一的 RL 训练框架，支持 7 种机器人平台的全身运动-操作策略训练与部署，包含平坦地形、全身控制（WBC）等训练模式。

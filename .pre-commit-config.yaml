@@ -16,7 +16,7 @@ repos:
       - id: check-symlinks
       - id: destroyed-symlinks
       - id: check-added-large-files
-        args: ["--maxkb=2000"]
+        args: ["--maxkb=5000"]
       - id: check-yaml
       - id: check-merge-conflict
       - id: check-case-conflict
