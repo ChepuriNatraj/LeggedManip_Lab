@@ -33,6 +33,7 @@ docker/.container.cfg
 **/outputs/*
 **/videos/*
 !docs/videos/
+!docs/videos/*
 **/wandb/*
 **/.neptune/*
 docker/artifacts/
