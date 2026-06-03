@@ -4,8 +4,9 @@
 
 # LeggedManip Lab
  
-[![IsaacSim](https://img.shields.io/badge/IsaacSim-5.1.0-blue.svg)](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html)
-[![IsaacLab](https://img.shields.io/badge/IsaacLab-v2.3-blue)](https://github.com/isaac-sim/IsaacLab)
+[![Isaac Sim](https://img.shields.io/badge/Isaac%20Sim-5.1.0-blue.svg)](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html)
+[![Isaac Lab](https://img.shields.io/badge/Isaac%20Lab-main%20branch-blue.svg)](https://github.com/isaac-sim/IsaacLab/tree/main)
+[![RSL-RL](https://img.shields.io/badge/rsl--rl--lib-%3E%3D5.0.1-blue.svg)](https://github.com/leggedrobotics/rsl_rl)
 [![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://docs.python.org/3/whatsnew/3.11.html)
 [![MuJoCo](https://img.shields.io/badge/MuJoCo-3.2.7-orange.svg?logo=mujoco)](https://mujoco.org/)
 [![Linux platform](https://img.shields.io/badge/platform-linux--64-orange.svg)](https://releases.ubuntu.com/22.04/)
