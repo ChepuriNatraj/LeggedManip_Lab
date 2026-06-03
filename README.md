@@ -64,13 +64,32 @@ Each platform supports the following **2** training modes:
 
 ### Prerequisites
 
-- Install Isaac Lab by following the [installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html). We recommend using the conda installation as it simplifies calling Python scripts from the terminal.
+- Install Isaac Lab by following the [official installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html).
+  We recommend using the conda installation as it simplifies calling Python scripts from the terminal.
 
-  **[Recommended one-click install](https://docs.robotsfan.com/isaaclab/source/setup/oneclick_installation.html)**
+> [!IMPORTANT]
+> This repository currently targets the Isaac Lab `main` branch with the newer RSL-RL config API.
+> Please do **not** use the Isaac Lab `v2.3.2` release tag, since it depends on `rsl-rl-lib==3.1.2` and is incompatible with the current agent configs.
+>
+> Required:
+> - Isaac Sim: `5.1.0`
+> - Isaac Lab: `main` branch
+> - rsl-rl-lib: `>=5.0.1`
+> - Python: `3.11`
 
-  ```bash
-  wget -O install_isaaclab.sh https://docs.robotsfan.com/install_isaaclab.sh && bash install_isaaclab.sh
-  ```
+**[Recommended one-click install](https://docs.robotsfan.com/isaaclab/source/setup/oneclick_installation.html)**:
+
+```bash
+wget -O install_isaaclab.sh https://docs.robotsfan.com/install_isaaclab.sh && bash install_isaaclab.sh
+```
+
+After installation, please verify the installed RSL-RL version:
+
+```bash
+python -m pip show rsl-rl-lib
+```
+
+The version should be `5.0.1` or newer. If it shows `3.1.2`, you are likely using the Isaac Lab `v2.3.2` release tag, which is not compatible with this repository.
 
 ### Install LeggedManip Lab
 
