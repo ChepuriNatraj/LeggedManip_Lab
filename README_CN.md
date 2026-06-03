@@ -61,14 +61,36 @@
 
 ## 安装
 
-### 前置依赖
+### 先决条件
 
-- 按照 [Isaac Lab 安装指南](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html) 完成安装。推荐使用 conda 方式安装，便于在终端直接调用 Python 脚本。
-**[推荐一键安装](https://docs.robotsfan.com/isaaclab/source/setup/oneclick_installation.html)**
+* 请根据 [Isaac Lab 官方安装指南](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html) 安装 Isaac Lab。
+  推荐使用 conda 安装方式，因为它可以更方便地在终端中调用 Python 脚本。
+
+> [!IMPORTANT]
+> 本仓库当前面向 Isaac Lab `main` branch 中较新的 RSL-RL 配置 API。
+> 请不要使用 Isaac Lab `v2.3.2` release tag，因为该版本依赖 `rsl-rl-lib==3.1.2`，与当前 agent 配置不兼容。
+>
+> 依赖要求：
+>
+> * Isaac Sim: `5.1.0`
+> * Isaac Lab: `main` branch
+> * rsl-rl-lib: `>=5.0.1`
+> * Python: `3.11`
+
+**[推荐一键安装脚本](https://docs.robotsfan.com/isaaclab/source/setup/oneclick_installation.html)**：
 
 ```bash
 wget -O install_isaaclab.sh https://docs.robotsfan.com/install_isaaclab.sh && bash install_isaaclab.sh
 ```
+
+安装完成后，请检查当前环境中的 RSL-RL 版本：
+
+```bash
+python -m pip show rsl-rl-lib
+```
+
+版本应为 `5.0.1` 或更高。如果显示为 `3.1.2`，则很可能安装的是 Isaac Lab `v2.3.2` release tag，该版本与本仓库当前代码不兼容。
+
 
 ### 安装 LeggedManip Lab
 
