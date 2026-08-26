@@ -79,3 +79,11 @@ MUJOCO_LOG.TXT
 # TacSL sensor
 **/tactile_record/*
 **/gelsight_r15_data/*
+
+# Generated USD world snapshots (downloaded scene assets)
+# Keeps robot USD assets under source/ tracked, ignores world/*.snapshot.*
+world/*.snapshot.*
+**/*.snapshot.*
+**/.cache/usd/
+**/*.usd.cached
+**/assets/**/*.usd_*_cache/
